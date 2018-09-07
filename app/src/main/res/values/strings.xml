@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">旷视</string>
+    <string name="alert_msg">请输入密钥和机密</string>
+
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+    <style name="Widget_GifView"></style>
+</resources>

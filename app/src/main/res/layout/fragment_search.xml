@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="人脸对比"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_search1"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="人脸图片1"
+        android:src="@drawable/pic1" />
+
+    <Button
+        android:id="@+id/ib_search_choice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_search1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/choose"
+        android:text="选择图片" />
+
+    <ImageView
+        android:id="@+id/iv_search2"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/ib_search_choice1"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="人脸图片2"
+        android:src="@drawable/pic2" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_search2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ib_search_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/enter"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/ib_search_choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/choose"
+            android:text="选择图片" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/ll_search"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/ic_launcher"
+            android:text="置信度"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <dev.brian.facedemo.util.GifView
+        android:id="@+id/gif"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:enabled="false" />
+
+</RelativeLayout>
